@@ -40,21 +40,26 @@ export const List = styled.ul`
   display: flex;
   align-items: center;
   gap: 50px;
-  padding: 0;
+  padding: 10px 0px;
   margin: 0;
+  border: solid 2px var(--text);
+  border-radius: 30px;
 
   li {
     a {
       text-decoration: none;
       color: var(--text);
       font-size: 1.2rem;
-      transition: color 0.3s ease;
-      border: solid 2px transparent;
+      transition: all 0.5s ease;
+      /* border: solid 2px transparent; */
       border-radius: 30px;
-      padding: 2px 7px;
+      /* padding: 2px 7px 5px 7px; */
+      padding: 10px 15px;
 
       &:hover {
-        border: solid 2px var(--text);
+        /* border: solid 2px var(--text); */
+        background-color: var(--text);
+        color: var(--primary);
       }
     }
   }
