@@ -6,7 +6,7 @@ import { useMotionValueEvent, useScroll } from 'framer-motion';
 
 import * as Styled from './style';
 
-function Navbar() {
+const Navbar = () => {
   const [isVisible, setIsVisible] = useState(true);
   const [isChecked, setIsChecked] = useState(false);
   const { scrollY } = useScroll();
@@ -42,20 +42,20 @@ function Navbar() {
       </Styled.ToggleMenu>
       <Styled.List $isChecked={isChecked}>
         <li>
-          <a href="#header">Home</a>
+          <a href="#header">HOME</a>
         </li>
         <li>
-          <a href="#header">About</a>
+          <a href="#header">ABOUT</a>
         </li>
         <li>
-          <a href="#header">Projects</a>
+          <a href="#header">PROJECTS</a>
         </li>
         <li>
-          <a href="#header">Contact</a>
+          <a href="#header">CONTACT</a>
         </li>
       </Styled.List>
     </Styled.Navbar>
   );
-}
+};
 
 export default Navbar;

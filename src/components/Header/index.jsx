@@ -4,7 +4,7 @@ import P from 'prop-types';
 import programer from '../../assets/programer.png';
 import * as Styled from './style';
 
-function Header({ background = 'var(--primary)' }) {
+const Header = ({ background = 'var(--primary)' }) => {
   return (
     <Styled.Header $background={background} id="header">
       <Styled.Content>
@@ -26,7 +26,7 @@ function Header({ background = 'var(--primary)' }) {
       </Styled.ImgContainer>
     </Styled.Header>
   );
-}
+};
 
 Header.propTypes = {
   background: P.string,
