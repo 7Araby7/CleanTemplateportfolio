@@ -3,7 +3,7 @@ export const projectData = [
     title: 'Complete Portfolio',
     description:
       'Explore all my projects through a portfolio filled with visual elements that highlight every detail of my work.',
-    link: 'https://7araby7.github.io/ReactPortfolio/',
+    link: 'https://GabrielBrunhara.github.io/ReactPortfolio/',
     tools: ['react', 'html', 'javaScript', 'framer-motion'],
   },
   {
