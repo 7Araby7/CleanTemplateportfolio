@@ -25,7 +25,7 @@ const Header = ({ handleScrollToSection, handleAnimate, animate }) => {
         <Button onClick={() => handleScrollToSection('about')}>More about me</Button>
         <Styled.Icons $animate={animate}>
           <a
-            href="https://github.com/7Araby7"
+            href="https://github.com/GabrielBrunhara"
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => handleAnimate(false)}

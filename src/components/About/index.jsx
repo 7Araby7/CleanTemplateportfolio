@@ -1,6 +1,7 @@
 import P from 'prop-types';
 import { FaReact, FaCss3Alt, FaSass, FaGitAlt, FaLaravel, FaHtml5 } from 'react-icons/fa';
-import { SiTypescript, SiJavascript, SiMysql } from 'react-icons/si';
+import { SiTypescript, SiJavascript, SiMysql, SiPhp } from 'react-icons/si';
+import { GrMysql } from 'react-icons/gr';
 
 import * as Styled from './styled';
 import programer from '../../assets/programer5.png';
@@ -69,17 +70,25 @@ const About = ({ handleScrollToSection }) => {
             <FaSass size={40} />
             <span className="tooltip">SASS</span>
           </Styled.Icon>
-          <Styled.Icon href="https://git-scm.com/doc" target="_blank" rel="noopener noreferrer">
-            <FaGitAlt size={40} />
-            <span className="tooltip">Git</span>
+          <Styled.Icon
+            href="https://www.php.net/docs.php"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <SiPhp size={40} />
+            <span className="tooltip">PHP</span>
           </Styled.Icon>
           <Styled.Icon href="https://laravel.com/docs" target="_blank" rel="noopener noreferrer">
             <FaLaravel size={40} />
             <span className="tooltip">Laravel</span>
           </Styled.Icon>
           <Styled.Icon href="https://dev.mysql.com/doc/" target="_blank" rel="noopener noreferrer">
-            <SiMysql size={40} />
+            <GrMysql size={40} />
             <span className="tooltip">MySQL</span>
+          </Styled.Icon>
+          <Styled.Icon href="https://git-scm.com/doc" target="_blank" rel="noopener noreferrer">
+            <FaGitAlt size={40} />
+            <span className="tooltip">Git</span>
           </Styled.Icon>
         </Styled.IconContainer>
 
