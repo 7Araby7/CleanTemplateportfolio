@@ -4,7 +4,7 @@ export const projectData = [
     description:
       'Explore all my projects through a portfolio filled with visual elements that highlight every detail of my work.',
     link: 'https://7araby7.github.io/ReactPortfolio/',
-    tools: ['react', 'node.js', 'express', 'mongodb'],
+    tools: ['react', 'html', 'javaScript', 'framer-motion'],
   },
   {
     title: 'Personal Blog',
