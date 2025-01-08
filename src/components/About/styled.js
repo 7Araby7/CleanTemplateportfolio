@@ -3,6 +3,10 @@ import styled from 'styled-components';
 export const IconContainer = styled.div`
   display: flex;
   gap: 25px;
+
+  @media (max-width: 570px) {
+    gap: 15px;
+  }
 `;
 
 export const Icon = styled.a`
@@ -31,6 +35,11 @@ export const Icon = styled.a`
     .tooltip {
       visibility: visible;
       opacity: 1;
+    }
+  }
+  @media (max-width: 570px) {
+    svg {
+      width: 100%;
     }
   }
 `;
