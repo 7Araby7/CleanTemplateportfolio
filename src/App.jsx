@@ -5,9 +5,13 @@ import { lightTheme, darkTheme } from './styles/theme';
 import Navbar from './components/Navbar';
 import Header from './components/Header';
 import GlobalStyle from './styles/globalStyle';
+import About from './components/About';
+import Projects from './components/Projects';
+import Contact from './components/Contact';
 
 function App() {
-  const [dark, setDark] = useState(true);
+  const [dark, setDark] = useState(false);
+  const [animate, setAnimate] = useState(false);
 
   const theme = dark ? darkTheme : lightTheme;
 
@@ -25,19 +29,31 @@ function App() {
     initializePreferences();
   }, []);
 
-  const handleThemeToggle = () => {
-    const newTheme = !dark;
+  const handleThemeToggle = (isDark) => {
+    const newTheme = isDark ? true : false;
     setDark(newTheme);
     localStorage.setItem('themePreference', newTheme ? 'dark' : 'light');
+  };
+
+  const handleScrollToSection = (section) => {
+    const targetSection = document.getElementById(section);
+    if (targetSection) {
+      targetSection.scrollIntoView();
+    }
+  };
+
+  const handleAnimate = (status) => {
+    setAnimate(status);
   };
 
   return (
     <ThemeProvider theme={{ ...theme }}>
       <GlobalStyle />
-      <Navbar />
-      <Header />
-      <Header background={'var(--secondary)'} />
-      <button onClick={handleThemeToggle}> troca o tema aqui carai</button>
+      <Navbar handleThemeToggle={handleThemeToggle} dark={dark} />
+      <Header handleScrollToSection={handleScrollToSection} handleAnimate={handleAnimate} animate={animate} />
+      <About handleScrollToSection={handleScrollToSection} />
+      <Projects handleScrollToSection={handleScrollToSection} />
+      <Contact handleScrollToSection={handleScrollToSection} handleAnimate={handleAnimate} />
     </ThemeProvider>
   );
 }

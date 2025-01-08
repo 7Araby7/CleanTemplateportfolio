@@ -3,10 +3,12 @@ import { useRef, useState } from 'react';
 import { IoClose } from 'react-icons/io5';
 import { HiMenuAlt3 } from 'react-icons/hi';
 import { useMotionValueEvent, useScroll } from 'framer-motion';
+import P from 'prop-types';
 
+import Switch from '../../Templates/Switch';
 import * as Styled from './style';
 
-const Navbar = () => {
+const Navbar = ({ handleThemeToggle, dark }) => {
   const [isVisible, setIsVisible] = useState(true);
   const [isChecked, setIsChecked] = useState(false);
   const { scrollY } = useScroll();
@@ -30,6 +32,7 @@ const Navbar = () => {
       animate={{ y: isVisible ? 0 : '-100%' }}
       transition={{ type: 'tween', duration: 0.5 }}
     >
+      <Switch handleThemeToggle={handleThemeToggle} dark={dark} />
       <Styled.ListName>
         <Styled.Name>
           <PiCodeBold size={50} />
@@ -42,20 +45,25 @@ const Navbar = () => {
       </Styled.ToggleMenu>
       <Styled.List $isChecked={isChecked}>
         <li>
-          <a href="#header">HOME</a>
+          <a href="#header">Home</a>
         </li>
         <li>
-          <a href="#header">ABOUT</a>
+          <a href="#about">About</a>
         </li>
         <li>
-          <a href="#header">PROJECTS</a>
+          <a href="#projects">Projects</a>
         </li>
         <li>
-          <a href="#header">CONTACT</a>
+          <a href="#contact">Contact</a>
         </li>
       </Styled.List>
     </Styled.Navbar>
   );
+};
+
+Navbar.propTypes = {
+  handleThemeToggle: P.func.isRequired,
+  dark: P.bool.isRequired,
 };
 
 export default Navbar;

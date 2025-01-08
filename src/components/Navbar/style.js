@@ -19,7 +19,7 @@ export const Navbar = styled(motion.nav)`
     padding-inline: 150px;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 848px) {
     border-bottom: solid 2px var(--text);
     padding-inline: 30px;
     height: 60px;
@@ -35,38 +35,52 @@ export const ListName = styled.ul`
   margin: 0;
 `;
 
+export const Name = styled.li`
+  padding-left: 50px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-right: auto;
+
+  svg {
+    color: var(--text);
+  }
+
+  @media (max-width: 848px) {
+    margin-right: 0;
+  }
+`;
+
 export const List = styled.ul`
   list-style: none;
   display: flex;
   align-items: center;
   gap: 50px;
-  padding: 10px 0px;
+  padding: 10px 2.5px;
   margin: 0;
   border: solid 2px var(--text);
   border-radius: 30px;
 
   li {
     a {
-      text-decoration: none;
-      color: var(--text);
       font-size: 1.2rem;
       transition: all 0.5s ease;
-      /* border: solid 2px transparent; */
       border-radius: 30px;
-      /* padding: 2px 7px 5px 7px; */
       padding: 10px 15px;
 
       &:hover {
-        /* border: solid 2px var(--text); */
         background-color: var(--text);
         color: var(--primary);
       }
     }
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 848px) {
     background-color: var(--primary);
     border: solid 2px var(--text);
+    border-radius: 0 0 0 30px;
     border-top: none;
     flex-direction: column;
     position: absolute;
@@ -82,25 +96,6 @@ export const List = styled.ul`
   }
 `;
 
-export const Name = styled.li`
-  padding-left: 50px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-right: auto;
-
-  svg {
-    color: var(--text);
-  }
-
-  @media (max-width: 768px) {
-    margin-right: 0;
-    padding: 0;
-  }
-`;
-
 export const ToggleMenu = styled.div`
   display: none;
   position: relative;
@@ -111,7 +106,7 @@ export const ToggleMenu = styled.div`
     display: none;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 848px) {
     display: block;
   }
 `;
