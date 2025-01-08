@@ -14,7 +14,7 @@ const Header = ({ handleScrollToSection, handleAnimate, animate }) => {
         $textAlign={'left'}
         $padding={'padding-left'}
         $fontFamily={'Pompiere'}
-        $fontSize={'30px'}
+        $fontSize={'31px'}
       >
         <p>Hello World,</p>
         <h1>
