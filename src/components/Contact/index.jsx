@@ -11,9 +11,10 @@ const Contact = ({ handleScrollToSection, handleAnimate }) => {
       <Content $alignItems={'end'} $textAlign={'right'} $padding={'padding-right'}>
         <h1>Contact</h1>
         <p>
-          I’m always open to connecting withnew people, whether it’s for potential collaborations,freelance
-          opportunities, or just a casual chat. If you have anyquestions, would like to discuss a project, or are
-          interested inworking together, feel free to reach out. I’ll do my best torespond as soon as possible!
+          I’m always open to connecting withnew people, whether it’s for potential
+          collaborations,freelance opportunities, or just a casual chat. If you have anyquestions,
+          would like to discuss a project, or are interested inworking together, feel free to reach
+          out. I’ll do my best torespond as soon as possible!
         </p>
         <Button
           onClick={() => {

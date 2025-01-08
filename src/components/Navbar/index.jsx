@@ -40,8 +40,15 @@ const Navbar = ({ handleThemeToggle, dark }) => {
         </Styled.Name>
       </Styled.ListName>
       <Styled.ToggleMenu>
-        <label htmlFor="toggle">{isChecked ? <IoClose size={25} /> : <HiMenuAlt3 size={25} />}</label>
-        <input type="checkbox" id="toggle" checked={isChecked} onChange={(e) => setIsChecked(e.target.checked)} />
+        <label htmlFor="toggle">
+          {isChecked ? <IoClose size={25} /> : <HiMenuAlt3 size={25} />}
+        </label>
+        <input
+          type="checkbox"
+          id="toggle"
+          checked={isChecked}
+          onChange={(e) => setIsChecked(e.target.checked)}
+        />
       </Styled.ToggleMenu>
       <Styled.List $isChecked={isChecked}>
         <li>

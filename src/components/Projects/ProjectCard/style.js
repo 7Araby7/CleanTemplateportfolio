@@ -78,7 +78,8 @@ export const ProjectDescription = styled.p`
 
   &:hover {
     transform: ${({ $side }) => ($side ? 'translate(-7px, -7px);' : 'translate(7px, -7px);')};
-    box-shadow: ${({ $side }) => ($side ? '7px 7px 5px rgba(0, 0, 0, 0.5)' : '-7px 7px 5px rgba(0, 0, 0, 0.5)')};
+    box-shadow: ${({ $side }) =>
+      $side ? '7px 7px 5px rgba(0, 0, 0, 0.5)' : '-7px 7px 5px rgba(0, 0, 0, 0.5)'};
   }
 
   @media (max-width: 720px) {

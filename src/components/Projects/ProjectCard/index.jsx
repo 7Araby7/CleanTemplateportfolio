@@ -38,7 +38,7 @@ const ProjectCard = ({ title, description, link, tools, index }) => {
         <Styled.ProjectCard $side={side}>
           <Styled.MobileLink href={link} target="_blank" rel="noopener noreferrer" />
           <Styled.Img $side={side} href={link} target="_blank" rel="noopener noreferrer">
-            <img src="/assets/img/teste.png" alt="site teste" />
+            <img src="/CleanTemplateportfolio/assets/img/teste.png" alt="site teste" />
           </Styled.Img>
           <Styled.ProjectTitle $side={side}>{title}</Styled.ProjectTitle>
           <Styled.ProjectDescription $side={side}>{description}</Styled.ProjectDescription>

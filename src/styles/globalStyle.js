@@ -105,6 +105,10 @@ export const Content = styled.div`
     }
   }
 
+  h2 {
+    margin-block: 30px;
+  }
+
   p {
     font-family: ${({ $fontFamily }) => $fontFamily || 'Funnel Sans'};
     font-size: ${({ $fontSize }) => $fontSize || '20px'};

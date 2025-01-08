@@ -50,7 +50,11 @@ function App() {
     <ThemeProvider theme={{ ...theme }}>
       <GlobalStyle />
       <Navbar handleThemeToggle={handleThemeToggle} dark={dark} />
-      <Header handleScrollToSection={handleScrollToSection} handleAnimate={handleAnimate} animate={animate} />
+      <Header
+        handleScrollToSection={handleScrollToSection}
+        handleAnimate={handleAnimate}
+        animate={animate}
+      />
       <About handleScrollToSection={handleScrollToSection} />
       <Projects handleScrollToSection={handleScrollToSection} />
       <Contact handleScrollToSection={handleScrollToSection} handleAnimate={handleAnimate} />
