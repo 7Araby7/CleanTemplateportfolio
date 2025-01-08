@@ -1,6 +1,6 @@
 import P from 'prop-types';
 import { FaReact, FaCss3Alt, FaSass, FaGitAlt, FaLaravel, FaHtml5 } from 'react-icons/fa';
-import { SiTypescript, SiJavascript, SiMysql, SiPhp } from 'react-icons/si';
+import { SiTypescript, SiJavascript, SiPhp } from 'react-icons/si';
 import { GrMysql } from 'react-icons/gr';
 
 import * as Styled from './styled';
