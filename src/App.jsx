@@ -8,6 +8,7 @@ import GlobalStyle from './styles/globalStyle';
 import About from './components/About';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 function App() {
   const [dark, setDark] = useState(false);
@@ -58,6 +59,7 @@ function App() {
       <About handleScrollToSection={handleScrollToSection} />
       <Projects handleScrollToSection={handleScrollToSection} />
       <Contact handleScrollToSection={handleScrollToSection} handleAnimate={handleAnimate} />
+      <Footer />
     </ThemeProvider>
   );
 }
