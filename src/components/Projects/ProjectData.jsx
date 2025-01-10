@@ -19,8 +19,7 @@ export const projectData = [
     title: 'Rick and Morty Wiki',
     description:
       'A web application that integrates the Rick and Morty API to display detailed information about the characters, featuring a search bar for filtering, a responsive layout, and pagination.',
-    deployLink: 'https://gabrielbrunhara.github.io/RickAndMortyCharacter',
-    ghLink: 'https://github.com/GabrielBrunhara/RickAndMortyCharacter',
+    link: 'https://gabrielbrunhara.github.io/RickAndMortyCharacter',
     tools: ['react', 'bootstrap', 'api-integration'],
     imgLink: '/CleanTemplateportfolio/assets/img/rickAndMorty.png',
   },
