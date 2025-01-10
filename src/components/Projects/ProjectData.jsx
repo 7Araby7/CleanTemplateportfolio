@@ -16,11 +16,12 @@ export const projectData = [
     imgLink: '/CleanTemplateportfolio/assets/img/acaiStore.png',
   },
   {
-    title: 'Weather App',
+    title: 'Rick and Morty Wiki',
     description:
-      'A weather application that fetches real-time data from a weather API. Users can search for weather conditions by location and see the forecast for the upcoming days.',
-    link: 'https://github.com/7Araby7/weather-app',
-    tools: ['react', 'axios', 'css'],
-    imgLink: '/CleanTemplateportfolio/assets/img/portfolio.png',
+      'A web application that integrates the Rick and Morty API to display detailed information about the characters, featuring a search bar for filtering, a responsive layout, and pagination.',
+    deployLink: 'https://gabrielbrunhara.github.io/RickAndMortyCharacter',
+    ghLink: 'https://github.com/GabrielBrunhara/RickAndMortyCharacter',
+    tools: ['react', 'bootstrap', 'api-integration'],
+    imgLink: '/CleanTemplateportfolio/assets/img/rickAndMorty.png',
   },
 ];

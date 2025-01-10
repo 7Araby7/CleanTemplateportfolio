@@ -14,6 +14,7 @@ export const Navbar = styled(motion.nav)`
   box-sizing: border-box;
   padding-inline: 100px;
   z-index: 1000;
+  overflow: hidden;
 
   @media (min-width: 1630px) {
     padding-inline: 150px;
